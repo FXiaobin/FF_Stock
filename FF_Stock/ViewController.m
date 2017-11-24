@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "StockDataView.h"
+#import "Define.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    StockDataView *small = [[StockDataView alloc] initWithFrame:CGRectMake(0, 100, kScreenWidth, kSCALE(260))];
+    small.backgroundColor = [UIColor yellowColor];
+    
+    [self.view addSubview:small];
+    
+    
 }
 
 
